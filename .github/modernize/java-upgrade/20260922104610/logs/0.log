@@ -1,0 +1,764 @@
+2026-09-22T10:46:10.029Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:46:10.032Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet",
+  "event": "precheckCompleted",
+  "status": "succeeded",
+  "phase": "precheck",
+  "details": {
+    "components": [
+      {
+        "name": "jdk",
+        "baseVersion": "17",
+        "targetVersion": "25"
+      }
+    ]
+  },
+  "message": "Maven Spring Boot project detected; upgrading Java runtime target from 17 to latest LTS Java 25."
+}}).
+2026-09-22T10:46:10.033Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:46:10.034Z [INFO] Project c:\Users\owenj\Downloads\safestreet (2)\safestreet is not a maven project, try to get java version from gradle
+2026-09-22T10:46:10.040Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:46:10.041Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:46:10.258Z [INFO] Try to get java version from gradle config files: 
+2026-09-22T10:46:10.260Z [INFO] Try to get java version from gradle properties: undefined
+2026-09-22T10:46:10.261Z [INFO] Project java version: 8
+2026-09-22T10:46:10.795Z [WARN] [ReportEventTool] Full project info unavailable, attempting lightweight fallback: UserError: Failed to detect build tool for the project at c:\Users\owenj\Downloads\safestreet (2)\safestreet. There are child Maven/Gradle projects detected: "safestreet". Would you like to use one of them instead?
+2026-09-22T10:46:10.799Z [INFO] Project c:\Users\owenj\Downloads\safestreet (2)\safestreet is not a maven project, try to get java version from gradle
+2026-09-22T10:46:11.204Z [INFO] Try to get java version from gradle config files: 
+2026-09-22T10:46:11.205Z [INFO] Try to get java version from gradle properties: undefined
+2026-09-22T10:46:12.750Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-09-22T10:46:12.750Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet",
+  "event": "planGenerationStarted",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-09-22T10:46:12.751Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:46:12.751Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-09-22T10:46:12.751Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-09-22T10:46:12.855Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:46:12.856Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet",
+  "event": "planGenerationStarted",
+  "status": "succeeded",
+  "phase": "plan"
+}}).
+2026-09-22T10:46:12.856Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:46:12.858Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:46:12.859Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:46:16.016Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-09-22T10:46:16.017Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260922104610",
+  "additionalSearchPaths": []
+}}).
+2026-09-22T10:46:16.018Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:46:16.019Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-09-22T10:46:16.020Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-09-22T10:46:16.169Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-09-22T10:46:16.170Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "additionalSearchPaths": []
+}}).
+2026-09-22T10:46:16.170Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:46:16.237Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.10\n   📁 Path: C:\\Program Files\\Java\\jdk-21.0.10\\bin\n   🏷️ Source: others\n\n2. Java 24.0.2\n   📁 Path: C:\\Users\\owenj\\.jdks\\corretto-24.0.2\\bin\n   🏷️ Source: others\n\n3. Java 25.0.2\n   📁 Path: C:\\Program Files\\Java\\jdk-25.0.2\\bin\n   🏷️ Source: others\n\nTotal: 3 JDK installation(s) found"
+}}).
+2026-09-22T10:46:16.238Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-09-22T10:46:16.283Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-09-22T10:46:16.284Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260922104610",
+  "additionalSearchPaths": [],
+  "includeVersion": true
+}}).
+2026-09-22T10:46:16.284Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:46:16.285Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-09-22T10:46:16.285Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-09-22T10:46:16.371Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-09-22T10:46:16.371Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "additionalSearchPaths": [],
+  "includeVersion": true
+}}).
+2026-09-22T10:46:16.372Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:46:16.377Z [INFO] [Tool.invoke]({result: {
+  "message": "No Maven installations found."
+}}).
+2026-09-22T10:46:16.378Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-09-22T10:47:42.936Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-09-22T10:47:42.937Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet",
+  "event": "planReviewed",
+  "status": "succeeded",
+  "phase": "plan",
+  "message": "Plan reviewed: Java 25 target, Maven installation, isolated pom.xml update, and full post-upgrade verification."
+}}).
+2026-09-22T10:47:42.938Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:47:42.939Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-09-22T10:47:42.941Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-09-22T10:47:43.049Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:47:43.049Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet",
+  "event": "planReviewed",
+  "status": "succeeded",
+  "phase": "plan",
+  "message": "Plan reviewed: Java 25 target, Maven installation, isolated pom.xml update, and full post-upgrade verification."
+}}).
+2026-09-22T10:47:43.050Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:47:43.054Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:47:43.055Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:47:46.168Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-09-22T10:47:46.169Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260922104610",
+  "autoExecute": true
+}}).
+2026-09-22T10:47:46.172Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:47:46.177Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Auto-executing [upgrade plan](file:///c:/Users/owenj/Downloads/safestreet (2)/safestreet/.github/modernize/java-upgrade/20260922104610/plan.md)"
+}}).
+2026-09-22T10:47:46.181Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-09-22T10:47:46.587Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-09-22T10:47:46.588Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "autoExecute": true
+}}).
+2026-09-22T10:47:46.589Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:47:46.589Z [INFO] Upgrade plan confirmed successfully.
+2026-09-22T10:47:46.592Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now."
+}}).
+2026-09-22T10:47:46.595Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-09-22T10:47:49.066Z [INFO] ---------------------prepare appmod-install-maven----------------------
+2026-09-22T10:47:49.067Z [INFO] [Tool.prepareInvocation]({name: appmod-install-maven, input: {
+  "sessionId": "20260922104610",
+  "version": "latest",
+  "dest": "C:\\Users\\owenj\\.maven"
+}}).
+2026-09-22T10:47:49.092Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:47:52.048Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven"
+}}).
+2026-09-22T10:47:52.049Z [INFO] ----------------------prepared appmod-install-maven----------------------
+2026-09-22T10:47:52.236Z [INFO] ----------------------invoke appmod-install-maven----------------------
+2026-09-22T10:47:52.236Z [INFO] [Tool.invoke]({name: appmod-install-maven, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "version": "latest",
+  "dest": "C:\\Users\\owenj\\.maven"
+}}).
+2026-09-22T10:47:52.237Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:47:58.803Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "mvn",
+    "path": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+    "version": "3.9.16"
+  },
+  "message": "Maven latest is installed at C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+  "telemetry": {
+    "tool": "Maven",
+    "version": "latest"
+  }
+}}).
+2026-09-22T10:47:58.804Z [INFO] ----------------------invoked appmod-install-maven----------------------
+2026-09-22T10:48:09.737Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-09-22T10:48:09.738Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "environmentSetup",
+  "status": "succeeded",
+  "phase": "execute",
+  "details": {
+    "jdkPath": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+    "buildToolPath": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin"
+  },
+  "message": "Java 25.0.2 and Maven 3.9.16 are available."
+}}).
+2026-09-22T10:48:09.738Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:48:09.739Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-09-22T10:48:09.740Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-09-22T10:48:09.805Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:48:09.805Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "environmentSetup",
+  "status": "succeeded",
+  "phase": "execute",
+  "details": {
+    "jdkPath": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+    "buildToolPath": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin"
+  },
+  "message": "Java 25.0.2 and Maven 3.9.16 are available."
+}}).
+2026-09-22T10:48:09.805Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:48:09.806Z [INFO] Project c:\Users\owenj\Downloads\safestreet (2)\safestreet is not a maven project, try to get java version from gradle
+2026-09-22T10:48:09.828Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:48:09.829Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:48:10.043Z [INFO] Try to get java version from gradle config files: 
+2026-09-22T10:48:10.044Z [INFO] Try to get java version from gradle properties: undefined
+2026-09-22T10:48:10.044Z [INFO] Project java version: 8
+2026-09-22T10:48:10.045Z [INFO] Build tool type detected from path: mvn
+2026-09-22T10:48:10.046Z [INFO] Build tool type: mvn
+2026-09-22T10:48:10.046Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+  "version": "8"
+}
+2026-09-22T10:48:10.046Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+  "version": ""
+}
+2026-09-22T10:48:10.047Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+    "name": "java",
+    "version": "8"
+  },
+  "name": "safestreet",
+  "dir": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet"
+}
+2026-09-22T10:48:21.884Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-09-22T10:48:21.886Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "baselineSetup",
+  "status": "skipped",
+  "phase": "execute",
+  "message": "JDK 17 is not installed; baseline compilation and tests skipped."
+}}).
+2026-09-22T10:48:21.887Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:48:21.893Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-09-22T10:48:21.896Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-09-22T10:48:22.201Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:48:22.202Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "baselineSetup",
+  "status": "skipped",
+  "phase": "execute",
+  "message": "JDK 17 is not installed; baseline compilation and tests skipped."
+}}).
+2026-09-22T10:48:22.203Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:48:22.207Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:48:22.210Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:48:34.207Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-09-22T10:48:34.208Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "upgradeStepStarted",
+  "status": "succeeded",
+  "phase": "execute",
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java Runtime Target"
+  }
+}}).
+2026-09-22T10:48:34.208Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:48:34.209Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-09-22T10:48:34.210Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-09-22T10:48:34.330Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-09-22T10:48:34.330Z [INFO] [Tool.invoke]({name: appmod-report-event, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "event": "upgradeStepStarted",
+  "status": "succeeded",
+  "phase": "execute",
+  "details": {
+    "stepNumber": 3,
+    "stepTitle": "Upgrade Java Runtime Target"
+  }
+}}).
+2026-09-22T10:48:34.331Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:48:34.333Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeStepStarted' reported!\nSession ID: 20260922104610,\nSession Dir: c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\.github\\modernize\\java-upgrade\\20260922104610"
+}}).
+2026-09-22T10:48:34.334Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-09-22T10:48:42.897Z [INFO] ---------------------prepare appmod-build-java-project----------------------
+2026-09-22T10:48:42.899Z [INFO] [Tool.prepareInvocation]({name: appmod-build-java-project, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "jdkPath": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+  "buildToolPath": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin"
+}}).
+2026-09-22T10:48:42.900Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-09-22T10:48:42.903Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Build project"
+}}).
+2026-09-22T10:48:42.904Z [INFO] ----------------------prepared appmod-build-java-project----------------------
+2026-09-22T10:48:43.146Z [INFO] ----------------------invoke appmod-build-java-project----------------------
+2026-09-22T10:48:43.146Z [INFO] [Tool.invoke]({name: appmod-build-java-project, modelId: auto, input: {
+  "sessionId": "20260922104610",
+  "projectPath": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet",
+  "jdkPath": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+  "buildToolPath": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin"
+}}).
+2026-09-22T10:48:43.147Z [INFO] [Tool.invoke] do invoke.
+2026-09-22T10:48:43.147Z [INFO] Project c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet is a maven project, try to get java version from pom.xml
+2026-09-22T10:48:43.161Z [INFO] Project java version: 25
+2026-09-22T10:48:43.161Z [INFO] Build tool type detected from path: mvn
+2026-09-22T10:48:43.162Z [INFO] Build tool type: mvn
+2026-09-22T10:48:43.162Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+  "version": "25"
+}
+2026-09-22T10:48:43.163Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+  "version": ""
+}
+2026-09-22T10:48:43.164Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\owenj\\.maven\\maven-3.9.16\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-25.0.2\\bin",
+    "name": "java",
+    "version": "25"
+  },
+  "name": "safestreet",
+  "dir": "c:\\Users\\owenj\\Downloads\\safestreet (2)\\safestreet\\safestreet"
+}
+2026-09-22T10:48:43.165Z [INFO] [MavenBuildTool] Getting build errors of c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet using Maven
+2026-09-22T10:48:43.168Z [INFO] [Environment] Running command (Java undefined): mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true
+[ERROR] COMPILATION ERROR : 
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.model.Incident
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol
+  symbol:   method getType()
+  location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol
+  symbol:   method getDescription()
+  location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol
+  symbol:   method getLocation()
+  location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol
+  symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)
+  location: variable incident of type com.safestreet.model.Incident
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.model.Patrol
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol
+  symbol:   method getPatrolArea()
+  location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol
+  symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)
+  location: variable patrol of type com.safestreet.model.Patrol
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.model.EmergencyAlert
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol
+  symbol:   method getLatitude()
+  location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol
+  symbol:   method getLongitude()
+  location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol
+  symbol:   method getLocation()
+  location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol
+  symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)
+  location: variable alert of type com.safestreet.model.EmergencyAlert
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol
+  symbol:   method getUsername()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol
+  symbol:   method getEmail()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol
+  symbol:   method getFullName()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol
+  symbol:   method getPhone()
+  location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.dto.AuthResponse
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol
+  symbol:   method getFullName()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol
+  symbol:   method getSubscriptionPlan()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol
+  symbol:   method getSubscriptionPlan()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol
+  symbol:   method getSubscriptionActive()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol
+  symbol:   method getPlanType()
+  location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol
+  symbol:   method setSubscriptionActive(boolean)
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol
+  symbol:   method builder()
+  location: class com.safestreet.model.Subscription
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol
+  symbol:   method getPlanType()
+  location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol
+  symbol:   method getPlanType()
+  location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol
+  symbol:   method getPaymentMethod()
+  location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol
+  symbol:   method getUsername()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.safestreet.model.User
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project safestreet: Compilation failure: Compilation failure: 
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.model.Incident
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol
+[ERROR]   symbol:   method getType()
+[ERROR]   location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol
+[ERROR]   symbol:   method getDescription()
+[ERROR]   location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol
+[ERROR]   symbol:   method getLocation()
+[ERROR]   location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable request of type com.safestreet.dto.IncidentRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)
+[ERROR]   location: variable incident of type com.safestreet.model.Incident
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.model.Patrol
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol
+[ERROR]   symbol:   method getPatrolArea()
+[ERROR]   location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable request of type com.safestreet.dto.PatrolUpdateRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)
+[ERROR]   location: variable patrol of type com.safestreet.model.Patrol
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.model.EmergencyAlert
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol
+[ERROR]   symbol:   method getLatitude()
+[ERROR]   location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol
+[ERROR]   symbol:   method getLongitude()
+[ERROR]   location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol
+[ERROR]   symbol:   method getLocation()
+[ERROR]   location: variable request of type com.safestreet.dto.EmergencyRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)
+[ERROR]   location: variable alert of type com.safestreet.model.EmergencyAlert
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.safestreet.dto.LoginRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol
+[ERROR]   symbol:   method getPhone()
+[ERROR]   location: variable request of type com.safestreet.dto.RegisterRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.dto.AuthResponse
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol
+[ERROR]   symbol:   method getSubscriptionPlan()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol
+[ERROR]   symbol:   method getSubscriptionPlan()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol
+[ERROR]   symbol:   method getSubscriptionActive()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol
+[ERROR]   symbol:   method getPlanType()
+[ERROR]   location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol
+[ERROR]   symbol:   method setSubscriptionActive(boolean)
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.safestreet.model.Subscription
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol
+[ERROR]   symbol:   method getPlanType()
+[ERROR]   location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol
+[ERROR]   symbol:   method getPlanType()
+[ERROR]   location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol
+[ERROR]   symbol:   method getPaymentMethod()
+[ERROR]   location: variable request of type com.safestreet.dto.SubscriptionRequest
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol
+[ERROR]   symbol:   method getUsername()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.safestreet.model.User
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+2026-09-22T10:48:58.594Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-09-22T10:48:58.598Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet
+2026-09-22T10:48:58.599Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet
+2026-09-22T10:48:58.602Z [INFO] [Environment] Running command (Java undefined): mvn help:effective-pom -Doutput=effective-pom-5f637a5a-80e9-4afa-9517-08322f88ddc5.log
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.4.0/build-helper-maven-plugin-3.4.0.pom
+Progress (1): 1.0 kBProgress (1): 2.5 kBProgress (1): 5.1 kBProgress (1): 7.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.4.0/build-helper-maven-plugin-3.4.0.pom (7.6 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/74/mojo-parent-74.pom
+Progress (1): 714 BProgress (1): 1.7 kBProgress (1): 5.2 kBProgress (1): 7.6 kBProgress (1): 9.1 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 19 kBProgress (1): 24 kBProgress (1): 26 kBProgress (1): 28 kBProgress (1): 31 kBProgress (1): 36 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/74/mojo-parent-74.pom (36 kB at 316 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.4.0/build-helper-maven-plugin-3.4.0.jar
+Progress (1): 0.9/70 kBProgress (1): 2.3/70 kBProgress (1): 3.6/70 kBProgress (1): 5.0/70 kBProgress (1): 6.4/70 kBProgress (1): 7.7/70 kBProgress (1): 8.2/70 kBProgress (1): 9.6/70 kBProgress (1): 11/70 kB Progress (1): 12/70 kBProgress (1): 14/70 kBProgress (1): 15/70 kBProgress (1): 16/70 kBProgress (1): 18/70 kBProgress (1): 19/70 kBProgress (1): 21/70 kBProgress (1): 22/70 kBProgress (1): 23/70 kBProgress (1): 25/70 kBProgress (1): 26/70 kBProgress (1): 27/70 kBProgress (1): 29/70 kBProgress (1): 30/70 kBProgress (1): 31/70 kBProgress (1): 33/70 kBProgress (1): 34/70 kBProgress (1): 36/70 kBProgress (1): 37/70 kBProgress (1): 38/70 kBProgress (1): 40/70 kBProgress (1): 41/70 kBProgress (1): 42/70 kBProgress (1): 47/70 kBProgress (1): 51/70 kBProgress (1): 55/70 kBProgress (1): 57/70 kBProgress (1): 62/70 kBProgress (1): 66/70 kBProgress (1): 70 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.4.0/build-helper-maven-plugin-3.4.0.jar (70 kB at 321 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.4.0/maven-help-plugin-3.4.0.pom
+Progress (1): 776 BProgress (1): 2.1 kBProgress (1): 5.0 kBProgress (1): 8.7 kBProgress (1): 9.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.4.0/maven-help-plugin-3.4.0.pom (9.7 kB at 73 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.4.0/maven-help-plugin-3.4.0.jar
+Progress (1): 3.8/64 kBProgress (1): 8.0/64 kBProgress (1): 12/64 kB Progress (1): 16/64 kBProgress (1): 21/64 kBProgress (1): 25/64 kBProgress (1): 29/64 kBProgress (1): 33/64 kBProgress (1): 38/64 kBProgress (1): 42/64 kBProgress (1): 46/64 kBProgress (1): 50/64 kBProgress (1): 54/64 kBProgress (1): 59/64 kBProgress (1): 63/64 kBProgress (1): 64 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.4.0/maven-help-plugin-3.4.0.jar (64 kB at 526 kB/s)
+[INFO] 
+[INFO] ---------------------< com.safestreet:safestreet >----------------------
+[INFO] Building SafeStreet 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.4.0:effective-pom (default-cli) @ safestreet ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.7.0/maven-plugin-tools-generators-3.7.0.pom
+Progress (1): 838 BProgress (1): 3.1 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.7.0/maven-plugin-tools-generators-3.7.0.pom (3.8 kB at 7.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.7.0/maven-plugin-tools-3.7.0.pom
+Progress (1): 797 BProgress (1): 2.4 kBProgress (1): 3.9 kBProgress (1): 9.8 kBProgress (1): 13 kB Progress (1): 17 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.7.0/maven-plugin-tools-3.7.0.pom (17 kB at 34 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.pom
+Progress (1): 817 BProgress (1): 2.3 kBProgress (1): 5.5 kBProgress (1): 7.8 kBProgress (1): 10 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.pom (13 kB at 24 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.pom
+Progress (1): 823 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.pom (823 B at 5.7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.1/plexus-interactivity-1.1.pom
+Progress (1): 1.3 kBProgress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.1/plexus-interactivity-1.1.pom (1.7 kB at 12 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/6.5/plexus-components-6.5.pom
+Progress (1): 1.3 kBProgress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/6.5/plexus-components-6.5.pom (2.7 kB at 28 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.pom
+Progress (1): 880 BProgress (1): 4.2 kBProgress (1): 7.1 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 22 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.pom (25 kB at 307 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.20/xstream-parent-1.4.20.pom
+Progress (1): 797 BProgress (1): 3.2 kBProgress (1): 5.9 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 19 kBProgress (1): 25 kBProgress (1): 26 kBProgress (1): 30 kBProgress (1): 35 kBProgress (1): 39 kBProgress (1): 42 kBProgress (1): 44 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.20/xstream-parent-1.4.20.pom (44 kB at 432 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.7.0/maven-plugin-tools-generators-3.7.0.jar
+Progress (1): 7.7/54 kBProgress (1): 16/54 kB Progress (1): 24/54 kBProgress (1): 40/54 kBProgress (1): 54 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.7.0/maven-plugin-tools-generators-3.7.0.jar (54 kB at 139 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.1/maven-reporting-api-3.1.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar
+Progress (1): 0.9/9.4 kBProgress (1): 2.3/9.4 kBProgress (1): 3.6/9.4 kBProgress (1): 5.0/9.4 kBProgress (1): 6.4/9.4 kBProgress (1): 7.7/9.4 kBProgress (1): 8.2/9.4 kBProgress (1): 9.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.jar (9.4 kB at 39 kB/s)
+Progress (1): 0.9/438 kBProgress (1): 2.3/438 kBProgress (1): 3.6/438 kBProgress (1): 5.0/438 kBProgress (1): 6.4/438 kBProgress (1): 7.7/438 kBProgress (1): 9.1/438 kBProgress (1): 10/438 kB Progress (1): 12/438 kBProgress (1): 13/438 kBProgress (1): 15/438 kBProgress (1): 16/438 kBProgress (1): 17/438 kBProgress (1): 19/438 kBProgress (1): 20/438 kBProgress (1): 21/438 kBProgress (1): 23/438 kBProgress (1): 24/438 kBProgress (1): 25/438 kBProgress (1): 26/438 kBProgress (1): 27/438 kBProgress (1): 29/438 kBProgress (1): 30/438 kBProgress (1): 31/438 kBProgress (1): 33/438 kBProgress (1): 34/438 kBProgress (1): 36/438 kBProgress (1): 37/438 kBProgress (1): 38/438 kBProgress (1): 40/438 kBProgress (1): 41/438 kBProgress (1): 42/438 kBProgress (1): 44/438 kBProgress (1): 45/438 kBProgress (1): 46/438 kBProgress (1): 48/438 kBProgress (1): 49/438 kBProgress (1): 51/438 kBProgress (1): 52/438 kBProgress (1): 53/438 kBProgress (1): 55/438 kBProgress (1): 59/438 kBProgress (1): 63/438 kBProgress (1): 67/438 kBProgress (1): 72/438 kBProgress (1): 76/438 kBProgress (1): 80/438 kBProgress (1): 82/438 kBProgress (1): 86/438 kBProgress (1): 90/438 kBProgress (1): 95/438 kBProgress (1): 99/438 kBProgress (1): 103/438 kBProgress (2): 103/438 kB | 0.9/645 kBProgress (2): 103/438 kB | 2.3/645 kBProgress (2): 103/438 kB | 3.6/645 kBProgress (2): 103/438 kB | 5.0/645 kBProgress (2): 103/438 kB | 6.4/645 kBProgress (2): 103/438 kB | 7.7/645 kBProgress (2): 107/438 kB | 7.7/645 kBProgress (2): 107/438 kB | 9.1/645 kBProgress (2): 107/438 kB | 10/645 kB Progress (2): 112/438 kB | 10/645 kBProgress (2): 112/438 kB | 11/645 kBProgress (2): 112/438 kB | 13/645 kBProgress (2): 116/438 kB | 13/645 kBProgress (2): 116/438 kB | 14/645 kBProgress (2): 120/438 kB | 14/645 kBProgress (2): 120/438 kB | 15/645 kBProgress (2): 123/438 kB | 15/645 kBProgress (2): 123/438 kB | 17/645 kBProgress (2): 127/438 kB | 17/645 kBProgress (2): 127/438 kB | 18/645 kBProgress (2): 127/438 kB | 20/645 kBProgress (2): 127/438 kB | 21/645 kBProgress (2): 127/438 kB | 22/645 kBProgress (2): 127/438 kB | 24/645 kBProgress (2): 127/438 kB | 25/645 kBProgress (2): 127/438 kB | 26/645 kBProgress (2): 127/438 kB | 28/645 kBProgress (2): 127/438 kB | 29/645 kBProgress (2): 127/438 kB | 31/645 kBProgress (2): 127/438 kB | 32/645 kBProgress (2): 127/438 kB | 33/645 kBProgress (2): 127/438 kB | 35/645 kBProgress (2): 127/438 kB | 36/645 kBProgress (2): 127/438 kB | 37/645 kBProgress (2): 127/438 kB | 39/645 kBProgress (2): 127/438 kB | 40/645 kBProgress (2): 127/438 kB | 41/645 kBProgress (2): 127/438 kB | 43/645 kBProgress (2): 127/438 kB | 44/645 kBProgress (2): 127/438 kB | 46/645 kBProgress (2): 127/438 kB | 47/645 kBProgress (2): 127/438 kB | 48/645 kBProgress (2): 127/438 kB | 50/645 kBProgress (2): 127/438 kB | 51/645 kBProgress (2): 127/438 kB | 52/645 kBProgress (2): 127/438 kB | 54/645 kBProgress (2): 127/438 kB | 55/645 kBProgress (2): 127/438 kB | 59/645 kBProgress (2): 131/438 kB | 59/645 kBProgress (2): 136/438 kB | 59/645 kBProgress (2): 140/438 kB | 59/645 kBProgress (2): 144/438 kB | 59/645 kBProgress (2): 148/438 kB | 59/645 kBProgress (2): 152/438 kB | 59/645 kBProgress (2): 157/438 kB | 59/645 kBProgress (2): 161/438 kB | 59/645 kBProgress (2): 165/438 kB | 59/645 kBProgress (2): 169/438 kB | 59/645 kBProgress (2): 174/438 kB | 59/645 kBProgress (2): 178/438 kB | 59/645 kBProgress (2): 182/438 kB | 59/645 kBProgress (2): 186/438 kB | 59/645 kBProgress (2): 188/438 kB | 59/645 kBProgress (2): 193/438 kB | 59/645 kBProgress (2): 197/438 kB | 59/645 kBProgress (2): 201/438 kB | 59/645 kBProgress (2): 205/438 kB | 59/645 kBProgress (2): 210/438 kB | 59/645 kBProgress (2): 214/438 kB | 59/645 kBProgress (2): 218/438 kB | 59/645 kBProgress (2): 234/438 kB | 59/645 kBProgress (2): 251/438 kB | 59/645 kBProgress (2): 251/438 kB | 64/645 kBProgress (2): 267/438 kB | 64/645 kBProgress (2): 267/438 kB | 68/645 kBProgress (2): 284/438 kB | 68/645 kBProgress (2): 284/438 kB | 72/645 kBProgress (2): 300/438 kB | 72/645 kBProgress (2): 300/438 kB | 76/645 kBProgress (2): 300/438 kB | 81/645 kBProgress (2): 316/438 kB | 81/645 kBProgress (2): 316/438 kB | 85/645 kBProgress (2): 319/438 kB | 85/645 kBProgress (2): 336/438 kB | 85/645 kBProgress (2): 352/438 kB | 85/645 kBProgress (2): 352/438 kB | 89/645 kBProgress (2): 369/438 kB | 89/645 kBProgress (2): 369/438 kB | 93/645 kBProgress (2): 369/438 kB | 97/645 kBProgress (2): 385/438 kB | 97/645 kBProgress (2): 385/438 kB | 102/645 kBProgress (2): 385/438 kB | 106/645 kBProgress (2): 401/438 kB | 106/645 kBProgress (2): 401/438 kB | 110/645 kBProgress (2): 401/438 kB | 114/645 kBProgress (2): 418/438 kB | 114/645 kBProgress (2): 418/438 kB | 119/645 kBProgress (2): 418/438 kB | 123/645 kBProgress (2): 434/438 kB | 123/645 kBProgress (2): 434/438 kB | 127/645 kBProgress (2): 438 kB | 127/645 kB    Progress (2): 438 kB | 131/645 kBProgress (2): 438 kB | 136/645 kBProgress (2): 438 kB | 140/645 kBProgress (2): 438 kB | 142/645 kBProgress (2): 438 kB | 147/645 kBProgress (2): 438 kB | 151/645 kBProgress (2): 438 kB | 155/645 kBProgress (2): 438 kB | 159/645 kBProgress (2): 438 kB | 164/645 kBProgress (2): 438 kB | 168/645 kBProgress (2): 438 kB | 172/645 kBProgress (2): 438 kB | 176/645 kBProgress (2): 438 kB | 181/645 kBProgress (2): 438 kB | 185/645 kBProgress (2): 438 kB | 189/645 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar (438 kB at 1.0 MB/s)
+Progress (1): 193/645 kBProgress (1): 197/645 kBProgress (1): 202/645 kBProgress (1): 206/645 kBProgress (1): 210/645 kBProgress (1): 214/645 kBProgress (1): 219/645 kBProgress (1): 223/645 kBProgress (1): 239/645 kBProgress (1): 256/645 kBProgress (1): 272/645 kBProgress (1): 274/645 kBProgress (1): 290/645 kBProgress (2): 290/645 kB | 7.7/11 kBProgress (2): 290/645 kB | 11 kB                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/3.1.1/maven-reporting-api-3.1.1.jar (11 kB at 17 kB/s)
+Progress (1): 306/645 kBProgress (1): 323/645 kBProgress (1): 339/645 kBProgress (1): 355/645 kBProgress (1): 372/645 kBProgress (1): 388/645 kBProgress (1): 405/645 kBProgress (1): 421/645 kBProgress (1): 437/645 kBProgress (1): 454/645 kBProgress (1): 470/645 kBProgress (1): 487/645 kBProgress (1): 503/645 kBProgress (1): 519/645 kBProgress (1): 536/645 kBProgress (1): 552/645 kBProgress (1): 568/645 kBProgress (1): 585/645 kBProgress (1): 601/645 kBProgress (1): 618/645 kBProgress (1): 634/645 kBProgress (1): 645 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar (645 kB at 794 kB/s)
+[INFO] Effective-POM written to: c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet\effective-pom-5f637a5a-80e9-4afa-9517-08322f88ddc5.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.684 s
+[INFO] Finished at: 2026-09-22T12:49:10+02:00
+[INFO] ------------------------------------------------------------------------
+2026-09-22T10:49:10.694Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-09-22T10:49:10.717Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-09-22T10:49:10.718Z [INFO] [MavenBuildTool] Cleaning c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet using Maven
+2026-09-22T10:49:10.721Z [INFO] [Environment] Running command (Java undefined): mvn clean -q -B -fn
+2026-09-22T10:49:15.857Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet from pom.xml
+2026-09-22T10:49:15.858Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet
+2026-09-22T10:49:15.858Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet\pom.xml
+2026-09-22T10:49:15.859Z [INFO] [Tool.invoke]({result: {
+  "message": "Build failed with 1 errors using command: `mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true`.\n- === Config File error     The below errors can be due to missing dependencies. You may have to refer     to the config files provided earlier to solve it.     'errorMessage': Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project safestreet: Compilation failure: Compilation failure:   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol     symbol:   method getType()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol     symbol:   method getDescription()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)     location: variable incident of type com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol     symbol:   method getPatrolArea()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)     location: variable patrol of type com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol     symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)     location: variable alert of type com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol     symbol:   method getFullName()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol     symbol:   method getPhone()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol     symbol:   method builder()     location: class com.safestreet.dto.AuthResponse   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol     symbol:   method getEmail()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol     symbol:   method getFullName()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol     symbol:   method getSubscriptionActive()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol     symbol:   method setSubscriptionActive(boolean)     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Subscription   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol     symbol:   method getPaymentMethod()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol     symbol:   method getPassword()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User \n  ```\n  Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project safestreet: Compilation failure: Compilation failure:   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol     symbol:   method getType()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol     symbol:   method getDescription()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)     location: variable incident of type com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol     symbol:   method getPatrolArea()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)     location: variable patrol of type com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol     symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)     location: variable alert of type com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol     symbol:   method getFullName()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol     symbol:   method getPhone()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol     symbol:   method builder()     location: class com.safestreet.dto.AuthResponse   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol     symbol:   method getEmail()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol     symbol:   method getFullName()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol     symbol:   method getSubscriptionActive()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol     symbol:   method setSubscriptionActive(boolean)     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Subscription   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol     symbol:   method getPaymentMethod()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol     symbol:   method getPassword()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User\n  ```",
+  "result": {
+    "numOfJavaFiles": 35,
+    "numOfClassFiles": 1,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 35,
+        "numOfClassFiles": 1
+      }
+    },
+    "errors": [
+      {
+        "errorMessage": "\n    === Config File error\n    The below errors can be due to missing dependencies. You may have to refer\n    to the config files provided earlier to solve it.\n    'errorMessage': Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project safestreet: Compilation failure: Compilation failure:   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol     symbol:   method getType()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol     symbol:   method getDescription()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)     location: variable incident of type com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol     symbol:   method getPatrolArea()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)     location: variable patrol of type com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol     symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)     location: variable alert of type com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol     symbol:   method getFullName()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol     symbol:   method getPhone()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol     symbol:   method builder()     location: class com.safestreet.dto.AuthResponse   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol     symbol:   method getEmail()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol     symbol:   method getFullName()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol     symbol:   method getSubscriptionActive()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol     symbol:   method setSubscriptionActive(boolean)     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Subscription   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol     symbol:   method getPaymentMethod()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol     symbol:   method getPassword()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User\n",
+        "raw": "Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project safestreet: Compilation failure: Compilation failure:   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[22,37] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[23,30] cannot find symbol     symbol:   method getType()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[24,37] cannot find symbol     symbol:   method getDescription()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[25,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[26,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[27,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.IncidentRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[44,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/IncidentService.java:[49,17] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Incident.IncidentStatus)     location: variable incident of type com.safestreet.model.Incident   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[22,31] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[25,36] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[26,36] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[27,36] cannot find symbol     symbol:   method getPatrolArea()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[34,37] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[35,37] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.PatrolUpdateRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/PatrolService.java:[49,15] cannot find symbol     symbol:   method setStatus(com.safestreet.model.Patrol.PatrolStatus)     location: variable patrol of type com.safestreet.model.Patrol   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[22,46] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[24,34] cannot find symbol     symbol:   method getLatitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[25,35] cannot find symbol     symbol:   method getLongitude()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[26,34] cannot find symbol     symbol:   method getLocation()     location: variable request of type com.safestreet.dto.EmergencyRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[38,78] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/EmergencyService.java:[43,14] cannot find symbol     symbol:   method setStatus(com.safestreet.model.EmergencyAlert.EmergencyStatus)     location: variable alert of type com.safestreet.model.EmergencyAlert   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,64] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[30,87] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[33,58] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.LoginRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[38,52] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[41,49] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[44,25] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[45,34] cannot find symbol     symbol:   method getUsername()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[46,31] cannot find symbol     symbol:   method getEmail()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[47,57] cannot find symbol     symbol:   method getPassword()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[48,34] cannot find symbol     symbol:   method getFullName()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[49,31] cannot find symbol     symbol:   method getPhone()     location: variable request of type com.safestreet.dto.RegisterRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[55,60] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[60,28] cannot find symbol     symbol:   method builder()     location: class com.safestreet.dto.AuthResponse   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[62,25] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[63,31] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[64,28] cannot find symbol     symbol:   method getEmail()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[65,27] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[66,31] cannot find symbol     symbol:   method getFullName()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,39] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[67,76] cannot find symbol     symbol:   method getSubscriptionPlan()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/AuthService.java:[68,41] cannot find symbol     symbol:   method getSubscriptionActive()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[31,71] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[32,13] cannot find symbol     symbol:   method setSubscriptionActive(boolean)     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[35,40] cannot find symbol     symbol:   method builder()     location: class com.safestreet.model.Subscription   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[37,34] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[38,45] cannot find symbol     symbol:   method getPlanType()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[42,39] cannot find symbol     symbol:   method getPaymentMethod()     location: variable request of type com.safestreet.dto.SubscriptionRequest   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/service/SubscriptionService.java:[49,76] cannot find symbol     symbol:   method getId()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[24,21] cannot find symbol     symbol:   method getUsername()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[25,21] cannot find symbol     symbol:   method getPassword()     location: variable user of type com.safestreet.model.User   /c:/Users/owenj/Downloads/safestreet (2)/safestreet/safestreet/src/main/java/com/safestreet/security/CustomUserDetailsService.java:[26,84] cannot find symbol     symbol:   method getRole()     location: variable user of type com.safestreet.model.User"
+      }
+    ],
+    "command": "mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true"
+  },
+  "telemetry": {
+    "result": "failed"
+  }
+}}).
+2026-09-22T10:49:15.859Z [INFO] ----------------------invoked appmod-build-java-project----------------------
+2026-09-22T10:49:15.862Z [INFO] [MavenBuildTool] Java version found in c:\Users\owenj\Downloads\safestreet (2)\safestreet\safestreet\pom.xml: 25
