@@ -1,4 +1,4 @@
-﻿import axios from 'axios'
+import axios from 'axios'
 
 const API_URL = import.meta.env.VITE_API_URL || '/api'
 
@@ -70,3 +70,8 @@ export const publicAPI = {
 }
 
 export default client
+
+export const adminAPI = {
+  createUser: (data) => client.post('/admin/users', data),
+}
+

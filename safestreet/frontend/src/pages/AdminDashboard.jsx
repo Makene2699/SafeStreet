@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useAuth } from '../context/AuthContext'
-import { publicAPI, incidentAPI, patrolAPI, emergencyAPI, subscriptionAPI } from '../api/client'
+import { publicAPI, incidentAPI, patrolAPI, emergencyAPI, subscriptionAPI, adminAPI } from '../api/client'
 import useCountUp from '../hooks/useCountUp'
 import {
   Shield, AlertTriangle, Users, TrendingUp, Siren, CreditCard,
-  MapPin, Clock, CheckCircle
+  MapPin, Clock, CheckCircle, UserPlus
 } from 'lucide-react'
 
 function StatCard({ icon, iconClass, value, label, delay, prefix }) {
@@ -14,6 +14,81 @@ function StatCard({ icon, iconClass, value, label, delay, prefix }) {
       <div className={`stat-icon ${iconClass}`}>{icon}</div>
       <div className="stat-value">{prefix}{count}</div>
       <div className="stat-label">{label}</div>
+    </div>
+  )
+}
+
+function CreateUserForm() {
+  const [form, setForm] = useState({ username: '', email: '', password: '', fullName: '', phone: '', role: 'GUARD' })
+  const [status, setStatus] = useState(null)
+  const [submitting, setSubmitting] = useState(false)
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus(null)
+    setSubmitting(true)
+    try {
+      await adminAPI.createUser(form)
+      setStatus({ type: 'success', message: 'Account created successfully.' })
+      setForm({ username: '', email: '', password: '', fullName: '', phone: '', role: 'GUARD' })
+    } catch (err) {
+      setStatus({ type: 'error', message: err.response?.data?.message || 'Failed to create account.' })
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  return (
+    <div className="card" style={{ marginBottom: 24 }}>
+      <div className="card-header">
+        <h3 className="card-title" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <UserPlus size={20} /> Create Guard / Admin Account
+        </h3>
+      </div>
+      <div className="card-body">
+        {status && (
+          <div className={status.type === 'success' ? 'alert alert-success' : 'alert alert-error'} style={{ marginBottom: 16 }}>
+            {status.message}
+          </div>
+        )}
+        <form onSubmit={handleSubmit}>
+          <div className="grid-2" style={{ gap: 12 }}>
+            <div className="form-group">
+              <label className="form-label">Full Name</label>
+              <input className="form-input" name="fullName" value={form.fullName} onChange={handleChange} required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Username</label>
+              <input className="form-input" name="username" value={form.username} onChange={handleChange} required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Email</label>
+              <input className="form-input" type="email" name="email" value={form.email} onChange={handleChange} required />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Phone</label>
+              <input className="form-input" name="phone" value={form.phone} onChange={handleChange} />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Password</label>
+              <input className="form-input" type="password" name="password" value={form.password} onChange={handleChange} required minLength={6} />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Role</label>
+              <select className="form-input" name="role" value={form.role} onChange={handleChange}>
+                <option value="GUARD">Guard</option>
+                <option value="ADMIN">Admin</option>
+                <option value="RESIDENT">Resident</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" className="btn btn-primary" style={{ marginTop: 8 }} disabled={submitting}>
+            {submitting ? 'Creating...' : 'Create Account'}
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
@@ -80,6 +155,8 @@ export default function AdminDashboard() {
         </div>
         <span className="role-tag" style={{ marginLeft: 'auto' }}>Admin</span>
       </div>
+
+      <CreateUserForm />
 
       {/* Stats */}
       <div className="stats-grid">

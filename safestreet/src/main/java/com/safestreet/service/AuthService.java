@@ -56,6 +56,31 @@ public class AuthService {
         return buildAuthResponse(user, jwt);
     }
 
+    public User createUserByAdmin(com.safestreet.dto.AdminCreateUserRequest request) {
+        if (userRepository.existsByUsername(request.getUsername())) {
+            throw new RuntimeException("Username already taken");
+        }
+        if (userRepository.existsByEmail(request.getEmail())) {
+            throw new RuntimeException("Email already in use");
+        }
+        User.Role role;
+        try {
+            role = User.Role.valueOf(request.getRole().toUpperCase());
+        } catch (IllegalArgumentException ex) {
+            throw new RuntimeException("Invalid role. Must be ADMIN, GUARD, or RESIDENT");
+        }
+        User user = User.builder()
+                .username(request.getUsername())
+                .email(request.getEmail())
+                .password(passwordEncoder.encode(request.getPassword()))
+                .fullName(request.getFullName())
+                .phone(request.getPhone())
+                .role(role)
+                .subscriptionActive(false)
+                .build();
+        return userRepository.save(user);
+    }
+
     private AuthResponse buildAuthResponse(User user, String token) {
         return AuthResponse.builder()
                 .token(token)
