@@ -1,15 +1,22 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import { Shield, Eye, EyeOff, Mail, Lock } from 'lucide-react'
+import { Shield, Eye, EyeOff, Mail, Lock, UserCog, UserCheck, User } from 'lucide-react'
+
+const ROLES = [
+  { key: 'RESIDENT', label: 'Resident', icon: User },
+  { key: 'GUARD', label: 'Guard', icon: UserCheck },
+  { key: 'ADMIN', label: 'Admin', icon: UserCog },
+]
 
 export default function Login() {
+  const [selectedRole, setSelectedRole] = useState('RESIDENT')
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-  const { login } = useAuth()
+  const { login, logout } = useAuth()
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
@@ -17,7 +24,14 @@ export default function Login() {
     setError('')
     setLoading(true)
     try {
-      await login(username, password)
+      const data = await login(username, password)
+      if (data.role !== selectedRole) {
+        logout()
+        const roleLabel = ROLES.find(r => r.key === selectedRole)?.label || selectedRole
+        setError('This account is not registered as ' + roleLabel + '. Please select the correct role.')
+        setLoading(false)
+        return
+      }
       navigate('/dashboard')
     } catch (err) {
       setError(err.response?.data?.message || 'Invalid credentials. Please try again.')
@@ -35,6 +49,33 @@ export default function Login() {
           </div>
           <h1>Welcome Back</h1>
           <p>Sign in to SafeStreet Khayelitsha</p>
+        </div>
+
+        <div style={{ display: 'flex', gap: 8, marginBottom: 20 }}>
+          {ROLES.map(({ key, label, icon: Icon }) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setSelectedRole(key)}
+              style={{
+                flex: 1,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 4,
+                padding: '10px 6px',
+                borderRadius: 'var(--radius)',
+                border: selectedRole === key ? '2px solid var(--primary, #14b8a6)' : '1px solid var(--border, #e2e8f0)',
+                background: selectedRole === key ? 'var(--surface-hover)' : 'transparent',
+                cursor: 'pointer',
+                fontSize: '0.8rem',
+                fontWeight: selectedRole === key ? 600 : 400,
+              }}
+            >
+              <Icon size={18} />
+              {label}
+            </button>
+          ))}
         </div>
 
         {error && (
@@ -84,7 +125,7 @@ export default function Login() {
           </div>
 
           <button type="submit" className="btn btn-primary btn-lg" style={{ width: '100%', marginTop: 8 }} disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In'}
+            {loading ? 'Signing in...' : 'Sign In as ' + (ROLES.find(r => r.key === selectedRole)?.label || '')}
           </button>
         </form>
 
