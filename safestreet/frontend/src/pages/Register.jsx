@@ -10,6 +10,7 @@ export default function Register() {
     password: '',
     fullName: '',
     phone: '',
+    role: 'RESIDENT',
   })
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
@@ -84,6 +85,17 @@ export default function Register() {
                 placeholder="your@email.com" value={form.email} onChange={handleChange} required
               />
             </div>
+          </div>
+
+          <div className="form-group">
+            <label className="form-label">Account Type</label>
+            <select
+              name="role" className="form-input" value={form.role} onChange={handleChange}
+            >
+              <option value="RESIDENT">Resident</option>
+              <option value="GUARD">Guard</option>
+              <option value="ADMIN">Admin</option>
+            </select>
           </div>
 
           <div className="form-group">

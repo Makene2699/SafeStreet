@@ -41,13 +41,21 @@ public class AuthService {
         if (userRepository.existsByEmail(request.getEmail())) {
             throw new RuntimeException("Email already in use");
         }
+        User.Role chosenRole = User.Role.RESIDENT;
+        if (request.getRole() != null && !request.getRole().isBlank()) {
+            try {
+                chosenRole = User.Role.valueOf(request.getRole().toUpperCase());
+            } catch (IllegalArgumentException ex) {
+                throw new RuntimeException("Invalid role. Must be ADMIN, GUARD, or RESIDENT");
+            }
+        }
         User user = User.builder()
                 .username(request.getUsername())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .fullName(request.getFullName())
                 .phone(request.getPhone())
-                .role(User.Role.RESIDENT)
+                .role(chosenRole)
                 .subscriptionPlan(User.SubscriptionPlan.STANDARD_PROTECTION)
                 .subscriptionActive(false)
                 .build();
